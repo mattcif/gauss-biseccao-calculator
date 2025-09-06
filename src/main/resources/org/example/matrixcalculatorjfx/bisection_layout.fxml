@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.matrixcalculatorjfx.BisectionController"
+      spacing="10" alignment="CENTER">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Método da Bissecção" style="-fx-font-size: 18;"/>
+
+    <GridPane hgap="10" vgap="10">
+        <Label text="Função f(x):" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="functionField" promptText="Ex: x^3 - x - 2" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="a:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="aField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="b:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="bField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Tolerância:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="tolField" promptText="Ex: 0.0001" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <Button text="Calcular" onAction="#onCalculate" prefWidth="150"/>
+    <TextArea fx:id="resultArea" prefWidth="300" prefHeight="200" editable="false"/>
+</VBox>

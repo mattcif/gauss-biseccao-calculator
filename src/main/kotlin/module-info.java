@@ -8,6 +8,7 @@ module org.example.matrixcalculatorjfx {
     requires net.synedra.validatorfx;
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
+    requires exp4j;
 
     opens org.example.matrixcalculatorjfx to javafx.fxml;
     exports org.example.matrixcalculatorjfx;

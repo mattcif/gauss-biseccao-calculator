@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.matrixcalculatorjfx.HomeController"
+      spacing="20" alignment="CENTER" prefWidth="400" prefHeight="200">
+
+    <Label text="Escolha um método" style="-fx-font-size: 18;"/>
+
+    <Button text="Eliminação de Gauss" onAction="#goToGauss" prefWidth="200"/>
+    <Button text="Método da Bissecção" onAction="#goToBisection" prefWidth="200"/>
+
+</VBox>
